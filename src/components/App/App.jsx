@@ -7,6 +7,7 @@ import { PrivateRoute } from 'components/PrivateRoute';
 import { useAuth } from 'useAuthHook';
 import { refreshUser } from '../../redux/auth/operations';
 import { Loader } from 'components/Loader';
+import ProductsPage from 'pages/ProductsPage/ProductsPage';
 
 const HomePage = lazy(() => import('../../pages/HomePage'));
 const RegisterPage = lazy(() => import('../../pages/RegisterPage'));
@@ -27,6 +28,8 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+
         <Route
           path="/register"
           element={

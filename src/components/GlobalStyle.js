@@ -37,4 +37,8 @@ a.active{
 p {
     margin: 0;
 }
+dd {
+  margin-left: 0;
+}
+
 `;

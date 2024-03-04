@@ -8,6 +8,7 @@ export const Navigation = () => {
   return (
     <UserMenuWrapp>
       <NavLink to="/">Home</NavLink>
+      <NavLink to="/products">Products</NavLink>
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}
     </UserMenuWrapp>
   );
